@@ -1,0 +1,14 @@
+{
+  "name": "testflow-tests",
+  "private": true,
+  "description": "TestFlow Pro avtomatik testlari uchun dependency'lar",
+  "scripts": {
+    "parser": "node import_parser_test.js",
+    "ui": "node ui_smoke.js"
+  },
+  "dependencies": {
+    "jsdom": "^26.0.0",
+    "mammoth": "^1.8.0",
+    "xlsx": "^0.18.5"
+  }
+}

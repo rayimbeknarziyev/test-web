@@ -1,0 +1,26 @@
+USE testflow_db;
+
+INSERT INTO users (name, email, password_hash) VALUES ('Demo Talaba', 'demo@testflow.local', '$2y$10$HshHAxOHKeYMT8RIoFt/Wu4C9uujuewThQIMvNWZDZeLeQv8X88di');
+SET @uid = LAST_INSERT_ID();
+INSERT INTO tests (user_id, title, subject, description, source_filename, current_version, question_count) VALUES (@uid, 'Veb dasturlash asoslari (namuna)', 'Dasturlash', 'Tizimni sinab ko‘rish uchun namunaviy test.', NULL, 1, 6);
+SET @tid = LAST_INSERT_ID();
+INSERT INTO test_versions (test_id, version_number, question_count) VALUES (@tid, 1, 6);
+SET @vid = LAST_INSERT_ID();
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'Savol: HTML nimaning qisqartmasi?', 1);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, 'HyperText Markup Language', 1, 1), (@qid, 'Home Tool Markup Language', 0, 2), (@qid, 'Hyperlinks and Text Marking Language', 0, 3), (@qid, 'High Text Machine Language', 0, 4);
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'CSS nima uchun ishlatiladi?', 2);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, 'Sahifani bezash va joylashtirish uchun', 1, 1), (@qid, 'Ma’lumotlar bazasini boshqarish uchun', 0, 2), (@qid, 'Server tomonida hisoblash uchun', 0, 3);
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'Qaysi teg eng katta sarlavhani bildiradi?', 3);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, '<h1>', 1, 1), (@qid, '<h6>', 0, 2), (@qid, '<head>', 0, 3), (@qid, '<title>', 0, 4);
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'JavaScript qayerda ishlaydi?', 4);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, 'Brauzerda ham, serverda ham', 1, 1), (@qid, 'Faqat serverda', 0, 2), (@qid, 'Faqat ma’lumotlar bazasida', 0, 3);
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'PHP da ma’lumotlar bazasi bilan xavfsiz ishlash usuli qaysi?', 5);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, 'PDO va tayyorlangan so‘rovlar', 1, 1), (@qid, 'So‘rovga foydalanuvchi matnini to‘g‘ridan-to‘g‘ri qo‘shish', 0, 2), (@qid, 'Parolni ochiq matnda saqlash', 0, 3);
+INSERT INTO questions (test_version_id, question_text, position) VALUES (@vid, 'MySQL da yagona qatorni aniqlovchi ustun nima deyiladi?', 6);
+SET @qid = LAST_INSERT_ID();
+INSERT INTO question_options (question_id, option_text, is_correct, position) VALUES (@qid, 'Primary key', 1, 1), (@qid, 'Foreign key', 0, 2), (@qid, 'Index key', 0, 3), (@qid, 'Unique view', 0, 4);

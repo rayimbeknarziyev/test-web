@@ -1,0 +1,6 @@
+.env
+testflow.env
+node_modules/
+storage/*
+!storage/.gitkeep
+!storage/.htaccess

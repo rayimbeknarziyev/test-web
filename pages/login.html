@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b4d">
+<title>Kirish — TestFlow Pro</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/pages.css">
+<link rel="stylesheet" href="../assets/css/responsive.css">
+</head>
+<body data-page="login">
+<div class="auth-layout">
+<aside class="auth-aside" id="auth-aside"></aside>
+<main class="auth-main"><div class="auth-card" id="page">
+<h1>Xush kelibsiz!</h1>
+<p class="sub">Hisobingizga kirib, o‘qishni davom ettiring.</p>
+<form id="loginForm" novalidate>
+<div class="field"><label class="label" for="email">Email</label>
+<div class="input-group"><i data-lucide="mail"></i><input class="input" id="email" name="email" type="email" placeholder="siz@example.com" autocomplete="email" required></div></div>
+<div class="field"><label class="label" for="password">Parol</label>
+<div class="input-group has-toggle"><i data-lucide="lock"></i><input class="input" id="password" name="password" type="password" placeholder="Parolingiz" autocomplete="current-password" required></div></div>
+<div class="row between" style="margin:-4px 0 18px"><span></span><a href="forgot.html" class="small">Parolni unutdingizmi?</a></div>
+<button class="btn btn-primary btn-lg btn-block" type="submit"><i data-lucide="log-in"></i><span>Kirish</span></button>
+</form>
+<div class="auth-foot">Hisobingiz yo‘qmi? <a href="register.html"><b>Ro‘yxatdan o‘ting</b></a></div>
+</div></main>
+</div>
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="../assets/js/config.js"></script>
+<script src="../assets/js/ui.js"></script>
+<script src="../assets/js/api.js"></script>
+<script src="../assets/js/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#142b4d">
+<meta name="description" content="TestFlow Pro — talabalar uchun test yechish, xatolar ustida ishlash va natijalarni kuzatish platformasi.">
+<title>TestFlow Pro — Bilimingizni sinab ko‘ring</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/layout.css">
+<link rel="stylesheet" href="assets/css/components.css">
+<link rel="stylesheet" href="assets/css/pages.css">
+<link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+<body class="land" data-page="landing">
+<header class="land-nav">
+  <a class="brand" href="#top"><span class="brand-mark"><i data-lucide="layers"></i></span><span>TestFlow<small style="color:var(--muted)">Pro</small></span></a>
+  <nav class="links"><a href="#features">Imkoniyatlar</a><a href="#how">Qanday ishlaydi</a><a href="#developer">Dasturchi</a></nav>
+  <div class="right">
+    <button class="btn btn-ghost btn-icon" id="themeBtn" type="button" aria-label="Mavzu"><i data-lucide="moon"></i></button>
+    <a class="btn btn-secondary btn-sm" id="navLogin" href="pages/login.html">Kirish</a>
+    <a class="btn btn-primary btn-sm" id="navStart" href="pages/register.html">Boshlash</a>
+  </div>
+</header>
+
+<section class="land-hero" id="top">
+  <div class="hero-grid">
+    <div>
+      <span class="eyebrow"><i data-lucide="sparkles"></i> Talabalar uchun test platformasi</span>
+      <h1>Bilimingizni <span class="grad-text">o‘z sur’atingizda</span> mustahkamlang</h1>
+      <p class="lead">Test faylingizni yuklang — Excel, CSV yoki Word. Savollar va variantlar aralashtiriladi, xatolaringiz saqlanadi, natijalaringiz esa real ma’lumotlar asosida kuzatiladi. Vaqt chegarasi yo‘q.</p>
+      <div class="hero-cta">
+        <a class="btn btn-primary btn-lg" id="heroStart" href="pages/register.html"><i data-lucide="rocket"></i> Bepul boshlash</a>
+        <a class="btn btn-secondary btn-lg" href="#how"><i data-lucide="play-circle"></i> Qanday ishlaydi</a>
+      </div>
+      <div class="hero-points">
+        <span><i data-lucide="check-circle-2"></i> Taymersiz</span>
+        <span><i data-lucide="check-circle-2"></i> Mashq va imtihon rejimi</span>
+        <span><i data-lucide="check-circle-2"></i> Xatolar ustida ishlash</span>
+      </div>
+    </div>
+    <div class="demo-card" aria-label="Interaktiv namuna">
+      <span class="badge badge-violet"><i data-lucide="sparkles"></i> Namuna — o‘zingiz sinab ko‘ring</span>
+      <div class="dq">HTML nima?</div>
+      <div class="demo-opts" id="demoOpts"></div>
+      <div class="demo-note" id="demoNote">Variantni tanlang — natija darhol ko‘rinadi.</div>
+    </div>
+  </div>
+</section>
+
+<section class="land-section" id="features">
+  <div class="sec-head"><h2>Talaba uchun hamma narsa bir joyda</h2><p>Oddiy test yechishdan tashqari, o‘qishni samarali qiladigan vositalar.</p></div>
+  <div class="feat-grid" id="featGrid"></div>
+</section>
+
+<section class="land-section" id="how">
+  <div class="sec-head"><h2>To‘rt qadamda boshlang</h2><p>Faylni yuklashdan natijani tahlil qilishgacha.</p></div>
+  <div class="steps" id="stepsGrid" style="margin-top:20px"></div>
+</section>
+
+<section class="land-section" id="developer">
+  <div class="dev-card">
+    <div class="row" style="gap:16px"><div class="dev-big-avatar">RS</div><div><span class="pill"><i data-lucide="code-2"></i> Dasturchi</span><h3 style="margin-top:8px">Rayimbek Sanjarovich</h3></div></div>
+    <p>TestFlow Pro talabalarning mustaqil o‘qishini yengillashtirish uchun yaratilgan. Savol, taklif yoki hamkorlik bo‘yicha bemalol bog‘laning.</p>
+    <div class="contact-grid">
+      <a class="contact" href="https://instagram.com/23.sanjarovich" target="_blank" rel="noopener"><span class="c-ico"><i data-lucide="instagram"></i></span><span style="min-width:0"><small>Instagram</small><b>@23.sanjarovich</b></span></a>
+      <a class="contact" href="https://t.me/Rayimbek_Sanjarovich" target="_blank" rel="noopener"><span class="c-ico"><i data-lucide="send"></i></span><span style="min-width:0"><small>Telegram</small><b>@Rayimbek_Sanjarovich</b></span></a>
+      <a class="contact" href="tel:+998934787762"><span class="c-ico"><i data-lucide="phone"></i></span><span style="min-width:0"><small>Telefon</small><b>+998 93 478 77 62</b></span></a>
+    </div>
+  </div>
+</section>
+
+<footer class="land-foot">
+  <span>© <span id="year"></span> TestFlow Pro</span>
+  <span>Dasturchi: Rayimbek Sanjarovich</span>
+</footer>
+
+<script src="https://unpkg.com/lucide@0.469.0/dist/umd/lucide.min.js"></script>
+<script src="assets/js/config.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/api.js"></script>
+<script src="assets/js/landing.js"></script>
+</body>
+</html>
